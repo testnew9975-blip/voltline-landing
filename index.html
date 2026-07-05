@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VoltLine - підбір та монтаж резервного живлення для квартир, будинків і бізнесу в Україні.">
+  <title>VoltLine - резервне живлення під ключ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="VoltLine на початок">
+      <span class="brand-mark">V</span>
+      <span>VoltLine</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-nav>
+      <a href="#packages">Пакети</a>
+      <a href="#calculator">Калькулятор</a>
+      <a href="#cases">Кейси</a>
+      <a href="#contact">Заявка</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/hero-power-system.png" alt="">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Резервне живлення для дому та бізнесу</p>
+          <h1>Світло, інтернет і робоча техніка під час відключень</h1>
+          <p class="hero-text">
+            Підбираємо обладнання, монтуємо акуратно й пояснюємо, як користуватися системою без зайвої технічної плутанини.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#calculator">Розрахувати систему</a>
+            <a class="button button-secondary" href="#packages">Дивитись пакети</a>
+          </div>
+          <div class="trust-row" aria-label="Переваги сервісу">
+            <span>Монтаж за 1-2 дні</span>
+            <span>Гарантія на роботи</span>
+            <span>Підбір під споживання</span>
+          </div>
+        </div>
+
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          Автономність до 12 годин для базових сценаріїв
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section">
+      <div class="section-heading">
+        <p class="eyebrow">Що вирішуємо</p>
+        <h2>Коли електрика зникає, робота не має зупинятися</h2>
+      </div>
+      <div class="problem-grid">
+        <article>
+          <span class="mini-icon">01</span>
+          <h3>Wi-Fi та зв'язок</h3>
+          <p>Роутер, термінал і ноутбук працюють, поки мережа недоступна.</p>
+        </article>
+        <article>
+          <span class="mini-icon">02</span>
+          <h3>Побутова техніка</h3>
+          <p>Холодильник, освітлення, котел або насос отримують стабільне живлення.</p>
+        </article>
+        <article>
+          <span class="mini-icon">03</span>
+          <h3>Малий бізнес</h3>
+          <p>Каса, кавомашина, світло й онлайн-замовлення не випадають із процесу.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="packages section" id="packages">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Пакети</p>
+          <h2>Три сценарії для швидкого старту</h2>
+        </div>
+        <p>Ці пакети показують типові задачі клієнтів. Фінальна комплектація підбирається після короткого аудиту споживання.</p>
+      </div>
+
+      <div class="package-grid">
+        <article class="package-card">
+          <p class="package-label">Квартира</p>
+          <h3>Base Home</h3>
+          <p class="package-price">від 38 000 грн</p>
+          <ul>
+            <li>Роутер, ноутбук, світло</li>
+            <li>Компактна батарея</li>
+            <li>Охайне підключення без ремонту</li>
+          </ul>
+          <a href="#contact" class="package-link">Отримати консультацію</a>
+        </article>
+
+        <article class="package-card featured">
+          <p class="package-label">Будинок</p>
+          <h3>Family Reserve</h3>
+          <p class="package-price">від 84 000 грн</p>
+          <ul>
+            <li>Котел, насос, холодильник</li>
+            <li>Більша ємність батарей</li>
+            <li>Захист від перевантаження</li>
+          </ul>
+          <a href="#contact" class="package-link">Підібрати пакет</a>
+        </article>
+
+        <article class="package-card">
+          <p class="package-label">Бізнес</p>
+          <h3>Workline Pro</h3>
+          <p class="package-price">від 120 000 грн</p>
+          <ul>
+            <li>Каса, термінал, Wi-Fi, світло</li>
+            <li>Резерв для робочої зміни</li>
+            <li>План масштабування системи</li>
+          </ul>
+          <a href="#contact" class="package-link">Запитати рішення</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="calculator section" id="calculator">
+      <div class="calculator-panel">
+        <div class="calculator-copy">
+          <p class="eyebrow">Калькулятор</p>
+          <h2>Оцініть, який пакет може підійти</h2>
+          <p>Виберіть тип об'єкта, техніку та бажану автономність. Це не комерційна пропозиція, але хороший перший орієнтир для заявки.</p>
+        </div>
+
+        <form class="calc-form" data-calculator>
+          <label>
+            Тип об'єкта
+            <select name="space">
+              <option value="flat">Квартира</option>
+              <option value="house">Приватний будинок</option>
+              <option value="business">Малий бізнес</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend>Що потрібно живити</legend>
+            <label class="check-row">
+              <input type="checkbox" name="devices" value="120" checked>
+              <span>Wi-Fi, телефон, ноутбук</span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" name="devices" value="250">
+              <span>Освітлення та холодильник</span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" name="devices" value="600">
+              <span>Котел, насос або кавомашина</span>
+            </label>
+            <label class="check-row">
+              <input type="checkbox" name="devices" value="850">
+              <span>Каса, термінал, робоча зона</span>
+            </label>
+          </fieldset>
+
+          <label>
+            Автономність: <strong data-hours-label>4 години</strong>
+            <input type="range" name="hours" min="2" max="12" step="1" value="4">
+          </label>
+
+          <div class="calc-result" data-result>
+            <span>Рекомендація</span>
+            <strong>Base Home</strong>
+            <p>Орієнтовно 0.5 кВт навантаження і 2.0 кВт*год ємності.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Процес</p>
+          <h2>Без хаосу в електрощитку</h2>
+        </div>
+        <p>Клієнт бачить зрозумілий шлях: заявка, аудит, монтаж, перевірка і коротке навчання.</p>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>1</span>
+          <h3>Заявка</h3>
+          <p>Уточнюємо об'єкт, техніку та бажаний час автономності.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>Аудит</h3>
+          <p>Рахуємо навантаження та підбираємо інвертор, батареї й захист.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>Монтаж</h3>
+          <p>Встановлюємо обладнання, маркуємо лінії та тестуємо систему.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <h3>Передача</h3>
+          <p>Пояснюємо правила користування і залишаємо рекомендації.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cases section" id="cases">
+      <div class="section-heading">
+        <p class="eyebrow">Кейси</p>
+        <h2>Приклади задач, які легко впізнати</h2>
+      </div>
+
+      <div class="case-grid">
+        <article>
+          <p class="case-city">Київ, квартира</p>
+          <h3>Робоче місце без простоїв</h3>
+          <p>Роутер, ноутбук, монітор і кілька світильників працюють до 7 годин.</p>
+        </article>
+        <article>
+          <p class="case-city">Львівська область, будинок</p>
+          <h3>Котел і насос під резервом</h3>
+          <p>Система підтримує опалення, холодильник і базове освітлення.</p>
+        </article>
+        <article>
+          <p class="case-city">Дніпро, кав'ярня</p>
+          <h3>Продажі не зупиняються</h3>
+          <p>Каса, термінал, Wi-Fi і робоче світло залишаються активними в пікові години.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Заявка</p>
+          <h2>Отримайте підбір системи під ваш об'єкт</h2>
+          <p>Залиште контакти, і менеджер уточнить сценарій використання. Для демо форма не надсилає дані на сервер.</p>
+        </div>
+
+        <form class="lead-form" data-lead-form>
+          <label>
+            Ім'я
+            <input type="text" name="name" placeholder="Наприклад, Олена" required>
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required>
+          </label>
+          <label>
+            Об'єкт
+            <select name="object">
+              <option>Квартира</option>
+              <option>Будинок</option>
+              <option>Бізнес</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Отримати консультацію</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>VoltLine - демо-лендінг для портфоліо HTML/CSS/JS.</p>
+    <a href="#top">Нагору</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
